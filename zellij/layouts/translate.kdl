@@ -1,0 +1,40 @@
+
+layout {
+		pane split_direction="vertical"{
+			pane {
+				command "trans"
+				args "hr:en" "-shell" "-show-languages" "n"
+			}
+			pane {
+				command "trans"
+				args "en:hr" "-shell" "-show-languages" "n"
+			}
+		}
+	swap_tiled_layout {
+		tab exact_panes=2{
+			pane split_direction="vertical"{
+				pane {
+					command "trans"
+					args "hr:en" "-shell" "-show-languages" "n"
+				}
+				pane {
+					command "trans"
+					args "en:hr" "-shell" "-show-languages" "n"
+				}
+			}
+		}
+		tab {
+			pane split_direction="vertical"{
+				pane {
+					command "trans"
+					args "hr:en" "-shell" "-show-languages" "n"
+				}
+				pane {
+					command "trans"
+					args "en:hr" "-shell" "-show-languages" "n"
+				}
+			}
+			pane size="25%"
+		}
+	}
+}
